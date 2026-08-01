@@ -19,7 +19,7 @@ function Main() { // Komponent nomi katta harf bilan boshlandi
                 <input 
                     type="text" 
                     placeholder="name...." 
-                    value={name}         // State bilan bog'landi
+                    value={name}        
                     onChange={handchange} 
                 />
                 <button id="btn" type="submit">Submit</button>
