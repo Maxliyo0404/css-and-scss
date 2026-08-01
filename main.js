@@ -17,7 +17,7 @@ function main() {
         
 <form >
   <label >Name is ...</label>
-  <input></input>
+  
   <button id="btn" type="submit">Submit</button>
 
 
