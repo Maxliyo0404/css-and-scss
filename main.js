@@ -1,34 +1,31 @@
+import React, { useState } from 'react';
 
+function Main() { // Komponent nomi katta harf bilan boshlandi
+    const [name, setName] = useState(""); // Boshlang'ich qiymat bo'sh qator berildi
 
-
-// var ism = "Malika";
-// console.log(ism);
-
-
-import React, { useState } from 'react'
-
-function main() {
-    const [name, setName] = useState();
-    function handchange(e){
-      setName
+    function handchange(e) {
+        setName(e.target.value); // Inputdagi qiymat state'ga saqlanyapti
     }
-  return (
-    <div>
-        
-<form >
-  <label >Name is ...</label>
-  <input type="text" placeholder="name....">
 
-  <button id="btn" type="submit">Submit</button>
+    function handleSubmit(e) {
+        e.preventDefault(); // Sahifa yangilanishining oldini oladi
+        console.log("Kiritilganism:", name);
+    }
 
-
-
-</form>
-
-
-        
-    </div>
-  )
+    return (
+        <div>
+            <form onSubmit={handleSubmit}>
+                <label>Name is {name}</label>
+                <input 
+                    type="text" 
+                    placeholder="name...." 
+                    value={name}         // State bilan bog'landi
+                    onChange={handchange} // Har bir o'zgarish funksiyaga uzatilyapti
+                />
+                <button id="btn" type="submit">Submit</button>
+            </form>
+        </div>
+    );
 }
 
-export default main
+export default Main;
