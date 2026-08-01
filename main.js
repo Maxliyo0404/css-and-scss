@@ -5,10 +5,11 @@
 // console.log(ism);
 
 
-import React from 'react'
+import React, { useState } from 'react'
 
 function main() {
-    const [name, setName]
+    const [name, setName] = useState();
+    function handchange
   return (
     <div></div>
   )
