@@ -8,8 +8,9 @@
 import React from 'react'
 
 function main() {
+    const [name, setName]
   return (
-    <div>main</div>
+    <div></div>
   )
 }
 
