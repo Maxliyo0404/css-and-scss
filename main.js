@@ -9,7 +9,9 @@ import React, { useState } from 'react'
 
 function main() {
     const [name, setName] = useState();
-    function handchange
+    function handchange(e){
+      setName
+    }
   return (
     <div></div>
   )
