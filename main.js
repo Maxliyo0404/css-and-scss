@@ -20,7 +20,7 @@ function Main() { // Komponent nomi katta harf bilan boshlandi
                     type="text" 
                     placeholder="name...." 
                     value={name}         // State bilan bog'landi
-                    onChange={handchange} // Har bir o'zgarish funksiyaga uzatilyapti
+                    onChange={handchange} 
                 />
                 <button id="btn" type="submit">Submit</button>
             </form>
