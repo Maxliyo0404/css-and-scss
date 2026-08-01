@@ -17,7 +17,8 @@ function main() {
         
 <form >
   <label >Name is ...</label>
-  
+  <input type="text" placeholder="name....">
+
   <button id="btn" type="submit">Submit</button>
 
 
